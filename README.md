@@ -8,6 +8,9 @@
     Behavior: The computer should take an input and return it
     Input:5125
     Output:5125
+    B: It can count up to the provided number.
+    I:5
+    O:[1,2,3,4,5]
     B: It shall generate a new number even if there was one previously in it
     I:6...10
     O:10
