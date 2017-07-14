@@ -1,16 +1,19 @@
 
-
-
-$(document).ready(function()  {
+$(function()  {
   $("#ping-pong").submit(function(event)  {
-      alert("test1");
-      for( var index= 0; index <= 10 ; index += 1)  {
-        alert("hi")
-      }
-      //   alert("hi")
+
+    var text = "";
+    var userInput= parseInt($("#ping").val());
+    alert(userInput)
+    for (var i= 0; userInput > i; userInput -=1 ) {
+      alert(i)
+      text += i + "<br>";
+      alert (userInput)
+    }
+
+      // if ( userInput % 3 ) {
+      //
       // }
-
-      event.preventDefault()
-
+    event.preventDefault();
   });
 });
