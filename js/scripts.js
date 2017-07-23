@@ -26,5 +26,6 @@ $(function()  {
       $('#result').append("<li>" + outPut[paddles]);
     };
     return outPut;
+    
   });
 });
