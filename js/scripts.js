@@ -23,9 +23,14 @@ $(function()  {
       var userInput = parseInt($("#ping").val());
       var outPut = pingPong(userInput);
       for(var paddles = 0; paddles<outPut.length; paddles += 1) {
-      $('#result').append("<li>" + outPut[paddles]);
+      $('#result').prepend("<li>" + outPut[paddles]);
     };
     return outPut;
-    
+
+
+
   });
+  $("#reseting").click(function(event){
+    $("#result").empty();
+  })
 });

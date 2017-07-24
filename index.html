@@ -9,19 +9,27 @@
   </head>
   <body>
     <div class="container">
-      <h1>Lets play some Ping Pong</h1>
+      <div class="jumbotron">
+        <h1>Lets play some Ping Pong</h1>
+      </div>
+      <ul>
+        <li>Pick a number and if it is divisable by 3 it will return pong</li>
+        <li>If it is divisble by 5 it will return ping</li>
+        <li>If it is divisabe by 15 it will return ping pong</li>
+      </ul>
       <form id="ping-pong">
         <div class="form-group">
           <label for="pong">Lets play some awesome possum ping pong.</label>
           <input id="ping">
         </div>
 
-        <button type="submit" class="btn">Time to play</button>
+        <button type="submit" class="btn btn-danger" id="submission">Time to play</button>
       </form>
-
+      <form class="form-group">
+        <input class="btn btn-primary" id="reseting" type="reset" value="Reset">
+      </form>
       <div>
         <ul id= "result">
-          <li></li>
         </ul>
       </div>
     </div>
