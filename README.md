@@ -5,21 +5,15 @@
 
 
   ### Specs
-    Behavior: The computer should take an input and return it
-    Input:5125
-    Output:5125
-    B: It can count up to the provided number.
-    I:5
-    O:[1,2,3,4,5]
-    B: It shall generate a new number even if there was one previously in it
-    I:6...10
-    O:10
-    B: It shall show numbers divisible by 3 as Ping
-    I:6
-    O:Ping
+    Behavior: The output can count up to a certain number.
+    Input:2
+    Output:[1,2]
+    B: It shall replace numbers divisible by 3 with 'Ping'
+    I:3
+    O:[1,2,Ping]
     B:It shall show numbers divisible by 5 as Pong
-    I:20
-    O:Pong
+    I:5
+    O:[1,2,ping,4,pong]
     B:It shall show numbers divisible by 15 as Ping-Pong
-    I:30
-    O:Ping-Pong
+    I:15
+    O:[... 14, Ping-Pong]
